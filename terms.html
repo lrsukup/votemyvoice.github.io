@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — VoteMyVoice</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:#000A7D; --sky:#009FE3; --sky-lt:#E0F5FC; --sky-mid:#80CFF1;
+    --purple:#813C97; --red:#FF3744; --ink:#0A0520; --ink-mid:#4A4060; --ink-lt:#8A82A0;
+    --surface:#F8F7FC; --border:#EAE8F2; --white:#FFFFFF;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family:'Outfit',sans-serif; background:var(--surface); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; }
+
+  .site-header { background:linear-gradient(135deg,#000A7D 0%,#1a0f6b 60%,#2a0a6e 100%); padding:40px 24px 36px; text-align:center; position:relative; overflow:hidden; }
+  .site-header::before { content:''; position:absolute; width:300px; height:300px; border-radius:50%; background:rgba(0,159,227,0.12); top:-80px; right:-60px; }
+  .site-header::after  { content:''; position:absolute; width:200px; height:200px; border-radius:50%; background:rgba(129,60,151,0.15); bottom:-60px; left:-40px; }
+  .logo-link { display:inline-flex; align-items:center; gap:10px; text-decoration:none; margin-bottom:20px; position:relative; z-index:1; }
+  .logo-icon { width:36px; height:36px; border-radius:10px; background:rgba(255,255,255,0.12); border:1.5px solid rgba(255,255,255,0.18); display:flex; align-items:center; justify-content:center; }
+  .logo-wordmark { font-family:'Fraunces',serif; font-size:22px; color:#fff; letter-spacing:-0.4px; }
+  .logo-wordmark span { color:var(--sky-mid); }
+  .header-badge { display:inline-block; background:rgba(255,55,68,0.2); border:1px solid rgba(255,55,68,0.3); border-radius:99px; padding:4px 14px; font-size:11px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; color:#FFB3B8; margin-bottom:12px; position:relative; z-index:1; }
+  .header-title { font-family:'Fraunces',serif; font-size:clamp(22px,5vw,34px); color:#fff; letter-spacing:-0.5px; margin-bottom:10px; position:relative; z-index:1; }
+  .header-meta { font-size:13px; color:rgba(255,255,255,0.5); position:relative; z-index:1; }
+
+  .toc-strip { background:var(--white); border-bottom:1px solid var(--border); padding:12px 24px; overflow-x:auto; white-space:nowrap; scrollbar-width:none; }
+  .toc-strip::-webkit-scrollbar { display:none; }
+  .toc-strip a { display:inline-block; font-size:12px; font-weight:600; color:var(--ink-lt); text-decoration:none; padding:5px 12px; border-radius:99px; margin-right:4px; }
+  .toc-strip a:hover { background:var(--sky-lt); color:var(--navy); }
+
+  .main { max-width:760px; margin:0 auto; padding:40px 24px 80px; }
+
+  .callout { background:var(--sky-lt); border:1px solid rgba(0,159,227,0.2); border-radius:12px; padding:16px 18px; margin-bottom:20px; display:flex; gap:12px; align-items:flex-start; }
+  .callout-icon { font-size:18px; flex-shrink:0; margin-top:1px; }
+  .callout p { font-size:14px; color:#005f88; line-height:1.55; margin:0; }
+  .callout strong { font-weight:700; }
+  .callout.warn { background:#FEF3DC; border-color:rgba(212,144,10,0.25); }
+  .callout.warn p { color:#7a4a00; }
+  .callout.red { background:#FFE8EA; border-color:rgba(255,55,68,0.2); }
+  .callout.red p { color:#8c0010; }
+
+  .section { margin-bottom:44px; scroll-margin-top:80px; }
+  h2 { font-family:'Fraunces',serif; font-size:22px; color:var(--navy); letter-spacing:-0.3px; margin-bottom:14px; padding-bottom:10px; border-bottom:2px solid var(--border); display:flex; align-items:center; gap:10px; }
+  .section-num { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:8px; background:var(--navy); color:#fff; font-family:'Outfit',sans-serif; font-size:12px; font-weight:700; flex-shrink:0; }
+  h3 { font-size:13px; font-weight:700; color:var(--ink); letter-spacing:0.8px; text-transform:uppercase; margin:20px 0 8px; }
+  p { font-size:14px; color:var(--ink-mid); line-height:1.7; margin-bottom:12px; }
+  p:last-child { margin-bottom:0; }
+  p.legal { font-size:13px; font-weight:600; color:var(--ink); letter-spacing:0.2px; }
+  ul,ol { margin:8px 0 12px 0; padding-left:20px; }
+  li { font-size:14px; color:var(--ink-mid); line-height:1.65; margin-bottom:5px; }
+
+  .table-wrap { overflow-x:auto; margin:14px 0; border-radius:12px; border:1px solid var(--border); }
+  table { width:100%; border-collapse:collapse; background:var(--white); }
+  thead th { background:var(--navy); color:#fff; font-size:11px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; padding:10px 14px; text-align:left; }
+  tbody td { padding:10px 14px; font-size:13px; color:var(--ink-mid); border-bottom:1px solid var(--border); vertical-align:top; }
+  tbody tr:last-child td { border-bottom:none; }
+  tbody tr:nth-child(even) td { background:var(--surface); }
+  tbody td:first-child { font-weight:600; color:var(--ink); white-space:nowrap; }
+  a { color:var(--navy); font-weight:600; }
+  a:hover { color:var(--sky); }
+
+  .site-footer { background:var(--navy); padding:28px 24px; text-align:center; }
+  .footer-logo { font-family:'Fraunces',serif; font-size:18px; color:#fff; margin-bottom:6px; }
+  .footer-logo span { color:var(--sky-mid); }
+  .site-footer p { font-size:12px; color:rgba(255,255,255,0.4); margin:0; }
+  .footer-links { margin-top:12px; }
+  .footer-links a { font-size:12px; color:rgba(255,255,255,0.55); font-weight:500; text-decoration:none; margin:0 10px; }
+  .footer-links a:hover { color:var(--sky-mid); }
+
+  @media(max-width:600px){ .main{padding:28px 16px 60px;} h2{font-size:19px;} }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="logo-link">
+    <div class="logo-icon">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 10l5 5L17 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <span class="logo-wordmark">Vote<span>My</span>Voice</span>
+  </a>
+  <div class="header-badge">📋 Terms of Use</div>
+  <h1 class="header-title">Terms of Use</h1>
+  <p class="header-meta">Effective Date: May 2026 &nbsp;·&nbsp; Version 1.0 (MVP — Texas)</p>
+</header>
+
+<nav class="toc-strip">
+  <a href="#acceptance">1. Acceptance</a>
+  <a href="#eligibility">2. Eligibility</a>
+  <a href="#description">3. Description</a>
+  <a href="#no-warranty">4. No Warranty</a>
+  <a href="#acceptable-use">5. Acceptable Use</a>
+  <a href="#ip">6. Intellectual Property</a>
+  <a href="#third-party">7. Third-Party Services</a>
+  <a href="#disclaimers">8. Disclaimers</a>
+  <a href="#liability">9. Liability</a>
+  <a href="#indemnification">10. Indemnification</a>
+  <a href="#governing-law">11. Governing Law</a>
+  <a href="#termination">12. Termination</a>
+  <a href="#changes">13. Changes</a>
+  <a href="#contact">14. Contact</a>
+</nav>
+
+<main class="main">
+
+  <div class="callout red">
+    <div class="callout-icon">⚠️</div>
+    <p><strong>By downloading, installing, or using VoteMyVoice, you agree to these Terms of Use.</strong> If you do not agree, do not use the app. VoteMyVoice is an informational tool only — it is not an official government service and does not constitute legal or voting advice.</p>
+  </div>
+
+  <div class="callout warn">
+    <div class="callout-icon">📋</div>
+    <p>This document is a Terms of Use draft for VoteMyVoice MVP. It should be reviewed by a qualified attorney before public launch, particularly regarding liability limitations, CCPA/Texas privacy law compliance, and applicable election law requirements.</p>
+  </div>
+
+  <section class="section" id="acceptance">
+    <h2><span class="section-num">1</span> Acceptance of Terms</h2>
+    <p>These Terms of Use ("Terms") govern your access to and use of the VoteMyVoice mobile application and any associated services (collectively, the "Service"). By using the Service, you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="/privacy.html">Privacy Policy</a>, which is incorporated herein by reference.</p>
+    <p>We may update these Terms from time to time. Continued use of the Service after changes are posted constitutes acceptance of the revised Terms. We will notify users of material changes via in-app notice.</p>
+  </section>
+
+  <section class="section" id="eligibility">
+    <h2><span class="section-num">2</span> Eligibility</h2>
+    <p>VoteMyVoice is intended for use by:</p>
+    <ul>
+      <li>Individuals who are 18 years of age or older; or</li>
+      <li>17-year-olds who will be 18 by the date of the next election, as permitted for voter pre-registration purposes in Texas.</li>
+    </ul>
+    <p>By using the Service, you represent and warrant that you meet these eligibility requirements. If you are under 13 years of age, you may not use the Service.</p>
+  </section>
+
+  <section class="section" id="description">
+    <h2><span class="section-num">3</span> Description of Service</h2>
+    <p>VoteMyVoice is a civic information tool that helps voters in Texas:</p>
+    <ul>
+      <li>Check voter registration status via links or in-app lookups to official state systems.</li>
+      <li>View candidates and races appearing on their ballot based on their address or county.</li>
+      <li>Access publicly available campaign finance information sourced from the FEC and other public data providers.</li>
+      <li>View key election dates, early voting schedules, and polling place information.</li>
+      <li>Complete an issues quiz to explore alignment between their preferences and candidate positions.</li>
+    </ul>
+    <div class="callout">
+      <div class="callout-icon">ℹ️</div>
+      <p>VoteMyVoice is an informational service only. It is not an official election authority, does not provide legal advice, and does not constitute an endorsement of any candidate, party, or political position. Always verify critical voting information with your county election office or the Texas Secretary of State.</p>
+    </div>
+  </section>
+
+  <section class="section" id="no-warranty">
+    <h2><span class="section-num">4</span> Informational Use Only — No Warranty on Data Accuracy</h2>
+    <p>Candidate and election data displayed in VoteMyVoice is sourced from third-party public data providers including the FEC, Open States, the Texas Secretary of State, and county election offices. While we make reasonable efforts to keep this data current and accurate, we make <strong>no representations or warranties</strong> regarding the completeness, accuracy, or timeliness of any data displayed.</p>
+    <p>You should independently verify any information that is material to your voting decisions by consulting official sources:</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Information</th><th>Official Source</th></tr></thead>
+      <tbody>
+        <tr><td>Voter registration status</td><td>Texas Secretary of State — <a href="https://votetexas.gov" target="_blank">votetexas.gov</a></td></tr>
+        <tr><td>Polling place / early voting</td><td>Your county election office</td></tr>
+        <tr><td>Candidate information</td><td>Candidate official websites, FEC ORCA, Ballotpedia</td></tr>
+        <tr><td>Campaign finance data</td><td>FEC — <a href="https://api.open.fec.gov" target="_blank">api.open.fec.gov</a></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section" id="acceptable-use">
+    <h2><span class="section-num">5</span> Acceptable Use</h2>
+    <p>You agree to use VoteMyVoice only for lawful, personal, non-commercial purposes. You must not:</p>
+    <ul>
+      <li>Scrape, crawl, or use automated means to access or extract data from the Service.</li>
+      <li>Attempt to reverse-engineer, decompile, or tamper with the app or its underlying infrastructure.</li>
+      <li>Use the Service to harass, impersonate, or harm any individual or organization.</li>
+      <li>Submit false address or identity information to manipulate ballot data results.</li>
+      <li>Use the Service in any way that violates applicable federal, Texas state, or local law, including any election laws.</li>
+      <li>Attempt to interfere with or disrupt the Service or its servers.</li>
+    </ul>
+    <p>We reserve the right to suspend or terminate access for any user who violates these Terms.</p>
+  </section>
+
+  <section class="section" id="ip">
+    <h2><span class="section-num">6</span> Intellectual Property</h2>
+    <p>All content, design, code, trademarks, and materials in VoteMyVoice — excluding publicly sourced government data — are the property of VoteMyVoice and are protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any proprietary content without our express written permission.</p>
+    <p>Publicly sourced data (FEC filings, Open States data, Texas SOS records) remains in the public domain and subject to the respective providers' terms of use.</p>
+  </section>
+
+  <section class="section" id="third-party">
+    <h2><span class="section-num">7</span> Third-Party Services and Links</h2>
+    <p>The Service may display links to external websites and transmit data to third-party APIs to fulfill its functions. These third parties have their own terms of service and privacy policies.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Service</th><th>Applies When</th></tr></thead>
+      <tbody>
+        <tr><td>Google Civic Information API</td><td>Resolving your address to a voting district</td></tr>
+        <tr><td>Texas Secretary of State</td><td>Voter registration status lookup</td></tr>
+        <tr><td>FEC API</td><td>Campaign finance data retrieval</td></tr>
+        <tr><td>Open States API</td><td>State legislative candidate data</td></tr>
+        <tr><td>Supabase</td><td>Account authentication and data storage</td></tr>
+      </tbody>
+    </table></div>
+    <p>We are not responsible for the content, accuracy, or practices of third-party services. Links to external sites do not constitute endorsements.</p>
+  </section>
+
+  <section class="section" id="disclaimers">
+    <h2><span class="section-num">8</span> Disclaimers</h2>
+    <p class="legal">THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+    <p>We do not warrant that the Service will be uninterrupted, error-free, or available at any particular time; that data displayed will be accurate, complete, or up to date; or that the Service will meet your specific requirements. Some jurisdictions do not allow the exclusion of implied warranties, so the above may not fully apply to you.</p>
+  </section>
+
+  <section class="section" id="liability">
+    <h2><span class="section-num">9</span> Limitation of Liability</h2>
+    <p class="legal">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, VOTEMYVOICE AND ITS OWNERS, OPERATORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE, INCLUDING BUT NOT LIMITED TO:</p>
+    <ul>
+      <li>Reliance on inaccurate or incomplete voter, candidate, or election data.</li>
+      <li>Failure to receive timely election reminders or notifications.</li>
+      <li>Inability to access the Service during a critical election period.</li>
+      <li>Any decisions made based on information provided by the Service.</li>
+    </ul>
+    <p>Our total liability to you for any claims arising from your use of the Service shall not exceed <strong>$10.00 USD</strong>.</p>
+  </section>
+
+  <section class="section" id="indemnification">
+    <h2><span class="section-num">10</span> Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless VoteMyVoice and its operators from and against any claims, liabilities, damages, losses, or expenses (including reasonable legal fees) arising out of or in any way connected with your use of the Service, your violation of these Terms, or your violation of any third-party rights.</p>
+  </section>
+
+  <section class="section" id="governing-law">
+    <h2><span class="section-num">11</span> Governing Law and Dispute Resolution</h2>
+    <p>These Terms are governed by and construed in accordance with the laws of the <strong>State of Texas</strong>, without regard to its conflict of law principles. Any dispute arising from or relating to these Terms or your use of the Service shall be resolved exclusively in the state or federal courts located in Texas, and you consent to the personal jurisdiction of such courts.</p>
+  </section>
+
+  <section class="section" id="termination">
+    <h2><span class="section-num">12</span> Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to the Service at any time, with or without notice, for any reason, including violation of these Terms. You may stop using the Service at any time. Sections 4, 6, 8, 9, 10, and 11 survive any termination.</p>
+  </section>
+
+  <section class="section" id="changes">
+    <h2><span class="section-num">13</span> Changes to the Service</h2>
+    <p>VoteMyVoice is an evolving product. We may modify, suspend, or discontinue any feature or the Service itself at any time without prior notice or liability. We are not obligated to maintain any particular feature, data source, or coverage area.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2><span class="section-num">14</span> Contact Us</h2>
+    <div class="table-wrap"><table><tbody>
+      <tr><td>General / support</td><td><a href="mailto:support@votemyvoice.app">support@votemyvoice.app</a></td></tr>
+      <tr><td>Privacy matters</td><td><a href="mailto:privacy@votemyvoice.app">privacy@votemyvoice.app</a></td></tr>
+      <tr><td>Security issues</td><td><a href="mailto:security@votemyvoice.app">security@votemyvoice.app</a></td></tr>
+    </tbody></table></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">Vote<span>My</span>Voice</div>
+  <p>Non-partisan · Free · Made for Texas voters</p>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Use</a>
+    <a href="mailto:support@votemyvoice.app">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

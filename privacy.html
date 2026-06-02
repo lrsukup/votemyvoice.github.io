@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — VoteMyVoice</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:#000A7D; --sky:#009FE3; --sky-lt:#E0F5FC; --sky-mid:#80CFF1;
+    --purple:#813C97; --ink:#0A0520; --ink-mid:#4A4060; --ink-lt:#8A82A0;
+    --surface:#F8F7FC; --border:#EAE8F2; --white:#FFFFFF;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family:'Outfit',sans-serif; background:var(--surface); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; }
+
+  /* Header */
+  .site-header { background:linear-gradient(135deg,#000A7D 0%,#1a0f6b 60%,#2a0a6e 100%); padding:40px 24px 36px; text-align:center; position:relative; overflow:hidden; }
+  .site-header::before { content:''; position:absolute; width:300px; height:300px; border-radius:50%; background:rgba(0,159,227,0.12); top:-80px; right:-60px; }
+  .site-header::after  { content:''; position:absolute; width:200px; height:200px; border-radius:50%; background:rgba(129,60,151,0.15); bottom:-60px; left:-40px; }
+  .logo-link { display:inline-flex; align-items:center; gap:10px; text-decoration:none; margin-bottom:20px; position:relative; z-index:1; }
+  .logo-icon { width:36px; height:36px; border-radius:10px; background:rgba(255,255,255,0.12); border:1.5px solid rgba(255,255,255,0.18); display:flex; align-items:center; justify-content:center; }
+  .logo-wordmark { font-family:'Fraunces',serif; font-size:22px; color:#fff; letter-spacing:-0.4px; }
+  .logo-wordmark span { color:var(--sky-mid); }
+  .header-badge { display:inline-block; background:rgba(0,159,227,0.2); border:1px solid rgba(0,159,227,0.3); border-radius:99px; padding:4px 14px; font-size:11px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; color:var(--sky-mid); margin-bottom:12px; position:relative; z-index:1; }
+  .header-title { font-family:'Fraunces',serif; font-size:clamp(22px,5vw,34px); color:#fff; letter-spacing:-0.5px; margin-bottom:10px; position:relative; z-index:1; }
+  .header-meta { font-size:13px; color:rgba(255,255,255,0.5); position:relative; z-index:1; }
+
+  /* TOC */
+  .toc-strip { background:var(--white); border-bottom:1px solid var(--border); padding:12px 24px; overflow-x:auto; white-space:nowrap; scrollbar-width:none; }
+  .toc-strip::-webkit-scrollbar { display:none; }
+  .toc-strip a { display:inline-block; font-size:12px; font-weight:600; color:var(--ink-lt); text-decoration:none; padding:5px 12px; border-radius:99px; margin-right:4px; }
+  .toc-strip a:hover { background:var(--sky-lt); color:var(--navy); }
+
+  /* Layout */
+  .main { max-width:760px; margin:0 auto; padding:40px 24px 80px; }
+
+  /* Callouts */
+  .callout { background:var(--sky-lt); border:1px solid rgba(0,159,227,0.2); border-radius:12px; padding:16px 18px; margin-bottom:20px; display:flex; gap:12px; align-items:flex-start; }
+  .callout-icon { font-size:18px; flex-shrink:0; margin-top:1px; }
+  .callout p { font-size:14px; color:#005f88; line-height:1.55; margin:0; }
+  .callout strong { font-weight:700; }
+  .callout.warn { background:#FEF3DC; border-color:rgba(212,144,10,0.25); }
+  .callout.warn p { color:#7a4a00; }
+
+  /* Sections */
+  .section { margin-bottom:44px; scroll-margin-top:80px; }
+  h2 { font-family:'Fraunces',serif; font-size:22px; color:var(--navy); letter-spacing:-0.3px; margin-bottom:14px; padding-bottom:10px; border-bottom:2px solid var(--border); display:flex; align-items:center; gap:10px; }
+  .section-num { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:8px; background:var(--navy); color:#fff; font-family:'Outfit',sans-serif; font-size:12px; font-weight:700; flex-shrink:0; }
+  h3 { font-size:13px; font-weight:700; color:var(--ink); letter-spacing:0.8px; text-transform:uppercase; margin:20px 0 8px; }
+  p { font-size:14px; color:var(--ink-mid); line-height:1.7; margin-bottom:12px; }
+  p:last-child { margin-bottom:0; }
+  ul,ol { margin:8px 0 12px 0; padding-left:20px; }
+  li { font-size:14px; color:var(--ink-mid); line-height:1.65; margin-bottom:5px; }
+
+  /* Table */
+  .table-wrap { overflow-x:auto; margin:14px 0; border-radius:12px; border:1px solid var(--border); }
+  table { width:100%; border-collapse:collapse; background:var(--white); }
+  thead th { background:var(--navy); color:#fff; font-size:11px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; padding:10px 14px; text-align:left; }
+  tbody td { padding:10px 14px; font-size:13px; color:var(--ink-mid); border-bottom:1px solid var(--border); vertical-align:top; }
+  tbody tr:last-child td { border-bottom:none; }
+  tbody tr:nth-child(even) td { background:var(--surface); }
+  tbody td:first-child { font-weight:600; color:var(--ink); white-space:nowrap; }
+  a { color:var(--navy); font-weight:600; }
+  a:hover { color:var(--sky); }
+
+  /* Footer */
+  .site-footer { background:var(--navy); padding:28px 24px; text-align:center; }
+  .footer-logo { font-family:'Fraunces',serif; font-size:18px; color:#fff; margin-bottom:6px; }
+  .footer-logo span { color:var(--sky-mid); }
+  .site-footer p { font-size:12px; color:rgba(255,255,255,0.4); margin:0; }
+  .footer-links { margin-top:12px; }
+  .footer-links a { font-size:12px; color:rgba(255,255,255,0.55); font-weight:500; text-decoration:none; margin:0 10px; }
+  .footer-links a:hover { color:var(--sky-mid); }
+
+  @media(max-width:600px){ .main{padding:28px 16px 60px;} h2{font-size:19px;} }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="logo-link">
+    <div class="logo-icon">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 10l5 5L17 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <span class="logo-wordmark">Vote<span>My</span>Voice</span>
+  </a>
+  <div class="header-badge">🔒 Privacy Policy</div>
+  <h1 class="header-title">Your data stays yours.</h1>
+  <p class="header-meta">Effective Date: May 2026 &nbsp;·&nbsp; Version 1.0 (MVP — Texas)</p>
+</header>
+
+<nav class="toc-strip">
+  <a href="#who-we-are">1. Who We Are</a>
+  <a href="#info-collect">2. What We Collect</a>
+  <a href="#how-we-use">3. How We Use It</a>
+  <a href="#retention">4. Retention</a>
+  <a href="#sharing">5. Sharing</a>
+  <a href="#rights">6. Your Rights</a>
+  <a href="#security">7. Security</a>
+  <a href="#children">8. Children</a>
+  <a href="#third-party">9. Third-Party Links</a>
+  <a href="#changes">10. Changes</a>
+  <a href="#contact">11. Contact</a>
+</nav>
+
+<main class="main">
+
+  <div class="callout">
+    <div class="callout-icon">🛡️</div>
+    <p><strong>The short version:</strong> VoteMyVoice uses your address only to look up your ballot information. We do not store your address on our servers, do not sell your data, and do not share it with third parties for advertising.</p>
+  </div>
+
+  <div class="callout warn">
+    <div class="callout-icon">⚠️</div>
+    <p>This document is a policy draft for VoteMyVoice MVP. It should be reviewed by a qualified attorney before public launch, particularly regarding CCPA obligations and Texas election law requirements.</p>
+  </div>
+
+  <section class="section" id="who-we-are">
+    <h2><span class="section-num">1</span> Who We Are</h2>
+    <p>VoteMyVoice is a civic technology application designed to help U.S. voters check their voter registration status and find information about candidates running in their area. The current version serves voters in Texas, with an initial focus on Harris, Montgomery, Bexar, Dallas, and Tarrant Counties.</p>
+    <div class="table-wrap"><table><tbody>
+      <tr><td>Contact</td><td><a href="mailto:privacy@votemyvoice.app">privacy@votemyvoice.app</a></td></tr>
+      <tr><td>Website</td><td><a href="https://www.votemyvoice.app">www.votemyvoice.app</a></td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="section" id="info-collect">
+    <h2><span class="section-num">2</span> Information We Collect</h2>
+    <h3>2a. Information You Provide</h3>
+    <ul>
+      <li>Your <strong>residential address</strong> — used to determine your county and jurisdiction so we can show you the correct ballot information.</li>
+      <li>Your <strong>name</strong> — optionally, if you use our voter registration status lookup feature.</li>
+      <li>Your <strong>account email and password</strong> — if you choose to create an account. Passwords are never stored in plaintext.</li>
+      <li><strong>Feedback or support messages</strong> — if you contact us directly.</li>
+    </ul>
+    <h3>2b. Information Collected Automatically</h3>
+    <ul>
+      <li>Your IP address and general geographic region (city/state level — not precise location).</li>
+      <li>Device type, operating system, and app version.</li>
+      <li>Actions taken within the app (e.g., which county was searched).</li>
+      <li>Date and time of your session.</li>
+    </ul>
+    <p>This data is used solely for security monitoring, debugging, and aggregate product analytics. It is not linked to your address input.</p>
+    <h3>2c. Location Data (GPS)</h3>
+    <p>VoteMyVoice may request access to your device's GPS location to pre-fill your address field for convenience. We do not store GPS coordinates. If you deny location permission, you can still use the app by typing your address manually.</p>
+  </section>
+
+  <section class="section" id="how-we-use">
+    <h2><span class="section-num">3</span> How We Use Your Information</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Purpose</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr><td>Voter registration lookup</td><td>Your address or name is sent to state and county systems. It is not stored on our servers after the response is returned.</td></tr>
+        <tr><td>Ballot &amp; candidate data</td><td>Your county is used to fetch relevant races from public data sources (FEC, Open States, Texas SOS). Only the county-level inference is used — not your full address.</td></tr>
+        <tr><td>Account services</td><td>Your email is used to authenticate you and, if you consent, to send election deadline reminders. We do not use your email for marketing without explicit opt-in.</td></tr>
+        <tr><td>App performance &amp; debugging</td><td>Aggregate, anonymized usage data helps us fix bugs and improve the product. No personally identifiable information is included.</td></tr>
+        <tr><td>Legal compliance</td><td>We may use or disclose information if required by law or to protect the rights and safety of our users.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section" id="retention">
+    <h2><span class="section-num">4</span> Data Retention</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Data Type</th><th>Retention</th></tr></thead>
+      <tbody>
+        <tr><td>Address Data</td><td>Not persisted. Used transiently to process your request, then discarded.</td></tr>
+        <tr><td>Account Data</td><td>Retained while your account is active. Deleted within 30 days of account deletion request.</td></tr>
+        <tr><td>Server Logs</td><td>Up to 90 days for security and debugging purposes, then automatically deleted.</td></tr>
+        <tr><td>Analytics Data</td><td>Aggregate, non-identifiable data may be retained indefinitely for product improvement.</td></tr>
+        <tr><td>Device Storage</td><td>Quiz answers and voter info are stored on your device only and never leave your device unless you are signed in.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section" id="sharing">
+    <h2><span class="section-num">5</span> Who We Share Data With</h2>
+    <p>We do not sell your personal information. We do not share your data with advertisers.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Party</th><th>What &amp; Why</th></tr></thead>
+      <tbody>
+        <tr><td>Texas Secretary of State</td><td>Your address/name is submitted to look up voter registration status.</td></tr>
+        <tr><td>FEC API</td><td>Campaign finance data is fetched using jurisdiction parameters only. No personal data is sent.</td></tr>
+        <tr><td>Open States API</td><td>State candidate data is fetched using jurisdiction parameters only.</td></tr>
+        <tr><td>Google Civic Information API</td><td>May be used to resolve your address to a voting district. Google's Privacy Policy applies.</td></tr>
+        <tr><td>Supabase</td><td>Account credentials and quiz results (if signed in) are stored in a Supabase-hosted database bound to data protection standards.</td></tr>
+        <tr><td>Law enforcement</td><td>Only if required by a valid legal order, and only to the extent required.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section" id="rights">
+    <h2><span class="section-num">6</span> Your Privacy Rights</h2>
+    <h3>California Residents (CCPA)</h3>
+    <p>If you are a California resident, you have the right to: know what personal information we collect; request deletion; opt out of the sale of your data (we do not sell it); and be free from discrimination for exercising your privacy rights. Contact <a href="mailto:privacy@votemyvoice.app">privacy@votemyvoice.app</a> to make a request.</p>
+    <h3>Texas Residents</h3>
+    <p>We extend the spirit of user control to all users. If you believe we have retained identifiable information about you and wish to request deletion, please contact us.</p>
+    <h3>All Users</h3>
+    <p>You may at any time delete your account from the app's Settings screen, or contact us to ask what information we may hold about you.</p>
+  </section>
+
+  <section class="section" id="security">
+    <h2><span class="section-num">7</span> Security</h2>
+    <p>We implement reasonable technical and organizational measures including HTTPS encryption for all data in transit and industry-standard authentication. Because we do not store your address data, the risk of a data breach exposing your voter information is substantially reduced by design.</p>
+    <p>To report a security issue: <a href="mailto:security@votemyvoice.app">security@votemyvoice.app</a></p>
+  </section>
+
+  <section class="section" id="children">
+    <h2><span class="section-num">8</span> Children's Privacy</h2>
+    <p>VoteMyVoice is intended for individuals 18 or older (or 17-year-olds who will be 18 by the next election, as permitted for voter pre-registration in Texas). We do not knowingly collect personal information from children under 13. Contact us to report any concerns.</p>
+  </section>
+
+  <section class="section" id="third-party">
+    <h2><span class="section-num">9</span> Third-Party Links and Services</h2>
+    <p>VoteMyVoice may link to external websites such as county clerk offices, official election portals, and candidate pages. This Privacy Policy does not apply to those sites. When we transmit data to third-party APIs (see Section 5), those providers' privacy policies govern their use of that data.</p>
+  </section>
+
+  <section class="section" id="changes">
+    <h2><span class="section-num">10</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy as VoteMyVoice expands to new states and features. When we make material changes we will update the Effective Date above and notify users via in-app notice. Continued use of VoteMyVoice after changes are posted constitutes your acceptance.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2><span class="section-num">11</span> Contact Us</h2>
+    <div class="table-wrap"><table><tbody>
+      <tr><td>Privacy matters</td><td><a href="mailto:privacy@votemyvoice.app">privacy@votemyvoice.app</a></td></tr>
+      <tr><td>Security issues</td><td><a href="mailto:security@votemyvoice.app">security@votemyvoice.app</a></td></tr>
+      <tr><td>General support</td><td><a href="mailto:support@votemyvoice.app">support@votemyvoice.app</a></td></tr>
+    </tbody></table></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">Vote<span>My</span>Voice</div>
+  <p>Non-partisan · Free · Made for Texas voters</p>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Use</a>
+    <a href="mailto:support@votemyvoice.app">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

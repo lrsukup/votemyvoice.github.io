@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoteMyVoice — Your issues · Your vote · Your voice</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy:#000A7D; --sky:#009FE3; --sky-mid:#80CFF1; --ink-lt:#8A82A0; }
+  body { font-family:'Outfit',sans-serif; background:linear-gradient(135deg,#000A7D 0%,#1a0f6b 60%,#2a0a6e 100%); min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 24px; text-align:center; -webkit-font-smoothing:antialiased; overflow:hidden; }
+  body::before { content:''; position:fixed; width:400px; height:400px; border-radius:50%; background:rgba(0,159,227,0.12); top:-100px; right:-100px; }
+  body::after  { content:''; position:fixed; width:260px; height:260px; border-radius:50%; background:rgba(129,60,151,0.15); bottom:-80px; left:-60px; }
+  .logo-icon { width:72px; height:72px; border-radius:20px; background:rgba(255,255,255,0.1); border:2px solid rgba(255,255,255,0.18); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; position:relative; z-index:1; }
+  h1 { font-family:'Fraunces',serif; font-size:clamp(32px,8vw,52px); color:#fff; letter-spacing:-1px; line-height:1.1; margin-bottom:14px; position:relative; z-index:1; }
+  h1 span { color:var(--sky-mid); }
+  .tagline { font-size:15px; color:rgba(255,255,255,0.5); font-style:italic; margin-bottom:40px; position:relative; z-index:1; letter-spacing:0.3px; }
+  .coming-soon { background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:14px; padding:20px 28px; margin-bottom:32px; position:relative; z-index:1; }
+  .coming-soon p { font-size:14px; color:rgba(255,255,255,0.7); line-height:1.6; }
+  .coming-soon strong { color:#fff; font-weight:700; }
+  .links { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; position:relative; z-index:1; }
+  .links a { font-size:13px; font-weight:600; color:rgba(255,255,255,0.5); text-decoration:none; padding:8px 16px; border:1px solid rgba(255,255,255,0.15); border-radius:99px; }
+  .links a:hover { color:#fff; border-color:rgba(255,255,255,0.4); }
+</style>
+</head>
+<body>
+
+  <div class="logo-icon">
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+      <path d="M5 18l9 9 17-17" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <h1>Vote<span>My</span>Voice</h1>
+  <p class="tagline">your issues · your vote · your voice</p>
+
+  <div class="coming-soon">
+    <p><strong>The app is coming soon.</strong><br>
+    VoteMyVoice helps Texas voters find their ballot, learn about candidates, and discover who best matches their priorities — for free, with no ads, and no political agenda.</p>
+  </div>
+
+  <div class="links">
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Use</a>
+    <a href="mailto:support@votemyvoice.app">Contact</a>
+  </div>
+
+</body>
+</html>
