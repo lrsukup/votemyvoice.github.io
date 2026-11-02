@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><title>VoteMyVoice</title>
+<script>
+  // GitHub Pages sends unknown paths here. Deep links into the web app
+  // (/app/...) are saved and replayed once the app loads at /app/.
+  (function () {
+    var l = window.location;
+    if (l.pathname.indexOf('/app/') === 0 || l.pathname === '/app') {
+      try { sessionStorage.setItem('vmv_redirect', l.pathname + l.search + l.hash); } catch (e) {}
+      l.replace('/app/');
+    } else {
+      l.replace('/');
+    }
+  })();
+</script></head><body>Redirecting…</body></html>
